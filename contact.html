@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Cake Wrecks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Submit Your Photo</h1>
+            <nav>
+                <h2>Navigation</h2>
+                <input type="checkbox" id="dropdown">
+                <label for="dropdown" class="wreck-button"><span></span></label>
+                <ul>
+                    <li><a href="#" id="home"><img src="logo.png" alt="Cake Wrecks logo"></a></li>
+                    <li><a href="#" class="wreck-button">Fan Faves</a></li>
+                    <li><a href="#" class="wreck-button">The Classics</a></li>
+                    <li><a href="#" class="wreck-button">Bakery Recommendations</a></li>
+                    <li><a href="#submitImage" class="wreck-button">Submit Image</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="contact-page" class="form-pages">
+        <p>Please note that while Jen reads and appreciates every single email, she is not able to personally respond to
+            everyone. She IS able, however, to occasionally refer to herself in the third person with moderate success.</p>
+        <form autocomplete="on" id="contact-form" class="form-fields">
+            <h2>What do you want to do?</h2>
+            <p>*Please be sure to read the <a href="#" class="wreck-link">Submission Guidelines</a>.</p>
+            <div id="form-layout">
+                <label for="contact-reason">Reason for Contact</label>
+                <select id="contact-reason">
+                    <option value="Reason for Contact" disabled selected>Reason for Contact</option>
+                    <option value="Professional Inquiries">Professional Inquiries</option>
+                    <option value="Casual Comments">Casual Comments</option>
+                    <option value="Submit Your Wreck">Submit Your Wreck</option>
+                    <option value="Submit Someone Else's Wreck">Submit Someone Else's Wreck</option>
+                </select>
+                <label for="name">Your name</label>
+                <input id="name" type="text" name="name" placeholder="Your name" required>
+                <label for="email">Email Address</label>
+                <input id="email" type="email" name="email" placeholder="Your email address">
+                <label for="tel">Phone Number</label>
+                <input id="tel" type="tel" name="tel" placeholder="(888) 888-8888">
+                <label for="comments" id="comments-label">Comments:</label>
+                <textarea id="comments" placeholder="Enter your comments..."></textarea>
+                <div id="fileInput-layout">
+                    <label for="fileInput">Submit your photo</label>
+                    <div id="dropZone">DRAG AND DROP YOUR IMAGE HERE <input type="file" id="fileInput"></div>
+                    <div id="preview"></div>
+                    <div id="actions" style="display:none;">
+                        <button type="button" id="deleteButton">Delete Image</button>
+
+                    </div>
+                </div>
+            </div>
+            <input id="submit" type="submit" class="wreck-button" value="Submit my wreck!">
+        </form>
+        <script src="script.js"></script>
+    </main>
+    <footer>
+        <div>
+            <input type="text" placeholder="Search...">
+            <ul id="social-icons">
+                <li><a href="#"><img src="facebook.png" alt="Facebook icon"></a></li>
+                <li><a href="#"><img src="rss.png" alt="RSS icon"></a></li>
+                <li><a href="#"><img src="twitter.png" alt="Twitter icon"></a></li>
+            </ul>
+            <ul class="footer-links">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Archive</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Disclosure Policy</a></li>
+            </ul>
+            <small>Copyright 2008-2021, Cake Wrecks. All Rights Reserved.</small>
+        </div>
+    </footer>
+</body>
+
+</html>

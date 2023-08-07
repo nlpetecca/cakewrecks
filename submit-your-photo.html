@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Image | Cake Wrecks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Submit Your Photo</h1>
+            <nav>
+                <h2>Navigation</h2>
+                <input type="checkbox" id="dropdown">
+                <label for="dropdown" class="wreck-button"><span></span></label>
+                <ul>
+                    <li><a href="#" id="home"><img src="logo.png" alt="Cake Wrecks logo"></a></li>
+                    <li><a href="#" class="wreck-button">Fan Faves</a></li>
+                    <li><a href="#" class="wreck-button">The Classics</a></li>
+                    <li><a href="#" class="wreck-button">Bakery Recommendations</a></li>
+                    <li><a href="#submitImage"  class="wreck-button">Submit Image</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="image-page" class="form-pages">
+        <h2>Attention, Wreckporters!</h2>
+        <p>If you do not own all  rights to the photo you're about to submit, DO NOT e-mail it here; go back to the <a href="#" class="wreck-link">Submit a Wreck page</a> and choose “Submit Someone Else's   Photo”. By submitting your photo here, you are indicating that you have read and agree to the <a href="#" class="wreck-link">CakeWrecks Submissions Contract</a>.</p>
+        <p><strong>One last thing:</strong> please don't send us photo collages or add your own commentary over them in photoshop. Just the photos with a description in the comments would be awesome. Thanks so much!</p>
+        <form autocomplete="on" id="image-form" class="form-fields">
+            <p> If your Wreck is  deemed worthy, it will be featured here on Cake  Wrecks. Talk about bragging  rights—you'll be an  instant hit at parties! Promise.</p>
+            <div id="form-layout">
+                <label for="name">Your name</label>
+                <input id="name" type="text" name="name" placeholder="Your name" required>
+                <label for="email">Email Address</label>
+                <input id="email" type="email" name="email" placeholder="Your email address">
+                <label for="tel">Phone Number</label>
+                <input id="tel" type="tel" name="tel" placeholder="(888) 888-8888">
+                <label for="comments" id="comments-label">Comments:</label>
+                <textarea id="comments" placeholder="Enter your comments..."></textarea>
+                <div id="fileInput-layout">
+                    <label for="fileInput">Submit your photo</label>
+                    <div id="dropZone">DRAG AND DROP YOUR IMAGE HERE <input type="file" id="fileInput"></div>
+                    <div id="preview"></div>
+                    <div id="actions" style="display:none;">
+                        <button type="button" id="deleteButton">Delete Image</button>
+                    </div>
+                </div>
+            </div>
+            <input id="submit" type="submit" class="wreck-button" value="Submit my wreck!">
+        </form>
+    </main>
+    <footer>
+        <div>
+            <input type="text" placeholder="Search...">
+            <ul id="social-icons">
+                <li><a href="#"><img src="facebook.png" alt="Facebook icon"></a></li>
+                <li><a href="#"><img src="rss.png" alt="RSS icon"></a></li>
+                <li><a href="#"><img src="twitter.png" alt="Twitter icon"></a></li>
+            </ul>
+            <ul class="footer-links">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Archive</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Disclosure Policy</a></li>
+            </ul>
+            <small>Copyright 2008-2021, Cake Wrecks. All Rights Reserved.</small>
+        </div>
+    </footer>
+</body>
+</html>
