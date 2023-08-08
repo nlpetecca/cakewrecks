@@ -28,13 +28,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     deleteButton.addEventListener('click', function(e) {
         e.preventDefault();
-        // Remove the image from preview
         while (preview.firstChild) {
             preview.removeChild(preview.firstChild);
         }
-        // Hide the delete button
         actions.style.display = "none";
-        // Show the drop zone again
         dropZone.style.display = "block";
     });
 
@@ -54,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 URL.revokeObjectURL(this.src);
             }
             
-            // Hide the drop zone, show the image preview and the delete button
             dropZone.style.display = "none";
             preview.appendChild(img);
             actions.style.display = "block";
